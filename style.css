@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+#main{
+	min-height: 100vh;
+	width: 100%;
+}
+#top{
+	min-height: 60vh;
+	width: 100%;
+	background-image: url(img1.jpg);
+	background-size: cover;
+	background-position: 50% 40%;
+}
+#overlay{
+    position: relative;
+	min-height: inherit;
+	width: 100%;
+	background-color: rgb(0, 0, 0, 0.281);
+}
+#text{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 20%;
+	width: 100%;
+	color: #fff;
+	padding: 0 10vw;
+	}
+#textright{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+#icons{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;	
+	position: relative;
+}
+
+/*this is links style codes*/
+
+.card-social {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.card-social svg {
+  fill: #e8ebef;
+  width: 16px;
+  display: block;
+  transition: 0.3s;
+}
+.card-social a {
+  color: #EC06B3;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background-color: #080505;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card-social a:hover svg {
+  fill: #d63a70;
+}
+.card-social a:last-child {
+  margin-right: 0;
+}
+
+/*end of links style*/
+
+ 
+#textright p{
+	font-size: 12px;
+	width: 40%;
+	margin-bottom: 10px;
+}
+#text h1{
+	font-size: 6vw;
+	font-weight: 500;
+}
+
+#bottom{
+	display: flex;
+	min-height: 40vh;
+	width: 100%;
+}
+
+#bone{
+	padding: 30px;
+	min-height: inherit;
+	width: 25%;
+	color: #080809;
+	background-image: url(img6.png);
+	background-size: cover;
+	background-position: center;
+}
+#bone p{
+	font-style: 12px;
+	margin-top: 50%;
+}
+
+#btwo{
+	min-height: inherit;
+	width: 25%;
+	background-image: url(img2.png);
+	background-size: cover;
+	background-position: center;  
+}
+#bthree{
+	min-height: inherit;
+	width: 20%;
+}
+#bthreetop{
+	min-height: 20vh;
+	width: 100%;
+	color: #fff;
+	padding: 20px;
+	background-color: #d50018;
+}
+#bthreetop p{
+	margin-top: 10px;
+	font-size: 10px;
+}
+#bthreebottom{
+	min-height: 50vh;
+	width: 100%;
+	background-image: url(img3.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#bfour{
+	min-height: inherit;
+	width: 30%;
+	padding: 30px;
+	background-image: url(img7.png);
+	background-size: 95% 80%;
+	background-repeat: no-repeat;
+	background-color: #9e5954;
+	background-position: center;
+	color: black;
+}
+
+
+@media (max-width: 500px){
+	#bottom{
+		min-height: 20vh;
+	}
+	#overlay #text{
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+	}
+	#text h1{
+		font-size: 10vw;
+		/*min-height: ;*/
+		position: absolute;
+		/*bottom: 50px;*/
+	}
+	#overlay #text #textright{
+		align-items: flex-start;
+		flex-direction: column;
+		/* top: -100px; */
+		/*right: 0px;*/
+		margin-top: 50px;
+	}
+	#overlay #text #textright p{
+		width: initial;
+		margin-top: 20px;
+	}
+	#overlay #text #textright #icons{
+		width: 20px;
+		/*margin-top: 30px;*/
+		margin-left: 80%;
+	}
+	#bottom{
+		flex-direction: column;
+	}
+	#bthreebottom{
+		background-size: cover;
+		width: 100%;
+		min-height: 100vh;
+	}
+	#bone{
+		width: 100%;
+		min-height: 40vh;
+	}
+	#btwo{
+		width: 100%;
+		min-height: 40vh;
+	}
+	#bthree{
+		width: 100%;
+	}
+	#bfour{
+		width: 100%;
+		min-height: 50vh;
+	}
+	
+}
